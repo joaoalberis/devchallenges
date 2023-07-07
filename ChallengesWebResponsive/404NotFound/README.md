@@ -12,7 +12,7 @@
 
 ## Overview
 
-![image](https://postimg.cc/VSwVbHQg)
+![image](https://i.postimg.cc/bvScWKm7/image.png)
 
 Solução de um dos projetos do devchallenges, nesse projeto utilizei o conhecimento basico de html e css(entre os conhecimentos de css utilizei o flex-box, responsivo)
 
@@ -22,4 +22,4 @@ Solução de um dos projetos do devchallenges, nesse projeto utilizei o conhecim
 
 ## Contact
 
-- GitHub [@your-username](https://www.github.com/joaoalberis)
+- GitHub [Joao Alberis](https://www.github.com/joaoalberis)
