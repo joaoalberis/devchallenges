@@ -69,6 +69,13 @@ main {
   background-color: #333;
   align-self: start;
   cursor: pointer;
+  transition: .3s ease-in-out;
+  box-shadow:  5px 5px 10px #696969;
+}
+
+.content button:hover {
+  background-color: #fff;
+  color: #333;
 }
 
 footer {
