@@ -10,14 +10,9 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://i.postimg.cc/MTmhzPcx/image.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Nesse projeto foi utilizado os conhecimentos de HTML, CSS, JS. Na parte do css teve a utilização do flexbox, grid e utilização dos @media para responsividade. O intuito ao ser feito esse projeto foi para a pratica de minha habilidades em html e css, desafio proposto por devchallenges.
 
 ### Built With
 
@@ -27,3 +22,4 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 ## Contact
 
 - GitHub [João Alberis](https://github.com/joaoalberis)
+- Site [Interior Consult](https://joaoalberis.github.io/devchallenges/ChallengesWebResponsive/interiorconsultant/)
