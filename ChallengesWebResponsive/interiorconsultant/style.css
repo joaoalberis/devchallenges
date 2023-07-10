@@ -32,24 +32,67 @@ header {
     margin-bottom: 20px;
 }
 
-header ul {
-    display: none;
+.bar {
+    position: absolute;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(-100%);
+    background-color: #181719;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+    transition: all .5s ease-out;
+    font-size: 1.125rem;
+    font-weight: 500; 
+}
+
+.bar.open{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    transform: translateY(0);
 }
 
 .hamburguer {
     display: flex;
+    flex-direction: column;
     flex-direction: column;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
+.hamburguer.open{
+    z-index: 99;
+    position: relative;
+    right: 20px;
+}
+
+.hamburguer.open span:nth-child(1){
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.hamburguer.open span:nth-child(2){
+    transform: rotate(-45deg);
+}
+
+.hamburguer.open span:nth-child(3){
+    transform: rotate(45deg);
+    position: absolute;
+}
+
 .hamburguer span {
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     display: block;
     margin-bottom: 5px;
+    transition: all .5s ease-in-out;
 }
 
 header h1 {
@@ -99,15 +142,15 @@ main {
 }
 
 .details-image {
-    height: 250px;
-    width: 800px;
+    height: 1000px;
+    width: 2000px;
     max-width: 100%;
     max-height: 100%;
 }
 
 .infos {
     position: relative;
-    width: 85vw;
+    width: 95vw;
     height: 40vh;
 }
 
@@ -162,13 +205,62 @@ footer {
     main {
        flex-direction: row;
        align-items: center;
+       gap: 40px;
     }
 
     .hamburguer {
         display: none;
     }
 
-    header ul {
+    .bar {
         display: flex ;
+        transform: none;
+        position: static;
+        height: auto;
+        width: auto;
+    }
+
+    .infos {
+        width: 90vw;
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .description h2 {
+        font-size: 3rem;
+        width: max-content;
+    }
+    
+    .description p {
+        width: 410px;
+        font-size: 1.5rem;
+    }
+    
+    .description button {
+        font-size: 1.125rem;
+    }
+
+    .info {
+        grid-template-columns: 50px 300px;
+    }
+    
+    .info p {
+        font-size: 1.5rem;
+        width: 287px;
+    }
+    
+    .info img{
+        height: 50px;
+    }
+    
+    .info-person p {
+        font-size: 1rem;
+    }
+    
+    .info-person span {
+        color: #828282;
+        font-size: .75rem;
+        font-weight: 500;
     }
 }
