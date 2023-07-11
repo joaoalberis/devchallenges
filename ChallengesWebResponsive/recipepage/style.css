@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +11,17 @@ body {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
 .container {
   height: 100%;
   width: 100%;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 header h1 {
@@ -41,9 +50,14 @@ header span img {
   align-self: flex-start;
 }
 
+.details-recipe {
+  width: 90vw;
+}
+
 .details-recipe > img {
-  height: 215px;
-  width: 352px;
+  height: 300px;
+  width: 1500px;
+  max-width: 100%;
   border-radius: 12px;
   margin-bottom: 20px;
 }
@@ -105,7 +119,7 @@ header span img {
 
 .ingredients-list {
     display: grid;
-    grid-template-columns: 20px max-content;
+    grid-template-columns: 20px 1fr;
     column-gap: 10px;
 }
 
@@ -120,8 +134,6 @@ header span img {
 .ingredients-list input:checked + label {
     text-decoration: line-through;
 }
-
-
 
 .instructions h3 {
     color: var(--gray-1, #333);
@@ -145,6 +157,7 @@ header span img {
     align-self: flex-start;
     color: white;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .instructions-info p {
@@ -161,4 +174,86 @@ footer {
     font-size: .875rem;
     font-weight: 500;
     padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px 50px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 0.875rem;
+  }
+
+  .details-recipe {
+    position: relative;
+    width: 70vw;
+  }
+  
+  .details-recipe > img {
+    height: 300px;
+    width: 1500px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .details-time-recipe {
+    position: absolute;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 0;
+    bottom: -250px;
+    right: 0;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .details:nth-child(1) {
+    grid-column: span 1;
+  }
+  
+  .details p {
+    font-size: 0.625rem;
+  }
+  
+  .details span span {
+    font-size: .875rem;
+  }
+
+  .ingredients {
+    gap: 25px;
+  }
+  
+  .ingredients h2 {
+    font-size: 1.5rem;
+  }
+  
+  .ingredients-details h3 {
+      font-size: 1.125rem;
+      margin-bottom: 15px;
+  }
+  
+  .ingredients-list {
+      column-gap: 15px;
+  }
+  
+  .ingredients-list label {
+      font-size: 1rem;
+  }
+
+  .instructions h3 {
+    margin-top: 30px;
+}
+
+.instructions-info span {
+    padding: 5px 12px;
+    justify-self: flex-end;
+}
 }
