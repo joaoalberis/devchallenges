@@ -12,14 +12,10 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Desktop](https://i.postimg.cc/rmfgbgGz/image.png)
+![Mobile](https://i.postimg.cc/QMbq9SyS/image.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Nesse projeto fiz a utilização de html e css praticando a responsavidade e o uso do grid. Esse projeto e seu layout foram propostos pela devchallenges.
 
 ### Built With
 
