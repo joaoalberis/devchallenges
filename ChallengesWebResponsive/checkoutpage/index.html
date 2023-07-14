@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="./assets/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Checkout</h1>
+      </header>
+      <div class="list-product">
+        <div class="product">
+          <img src="./assets/photo1.png" alt="Mochila" />
+          <div class="info-product">
+            <p>Vintage Backbag</p>
+            <div class="price">
+              <span>$54.99</span>
+              <span>$94.99</span>
+            </div>
+            <div class="product-quantity">
+              <img
+                src="./assets/remove.svg"
+                onclick="handleRemove(event)"
+                alt=""
+              />
+              <span>1</span>
+              <img src="./assets/add.svg" onclick="handleAdd(event)" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/photo2.png" alt="Mochila" />
+          <div class="info-product">
+            <p>Levi Shoes</p>
+            <div class="price">
+              <span>$74.99</span>
+              <span>$124.99</span>
+            </div>
+            <div class="product-quantity">
+              <img
+                src="./assets/remove.svg"
+                onclick="handleRemove(event)"
+                alt=""
+              />
+              <span>1</span>
+              <img src="./assets/add.svg" onclick="handleAdd(event)" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="shipping">
+          <p>Shipping</p>
+          <span>$19</span>
+        </div>
+        <div class="price-total">
+          <p>Total</p>
+          <span id="total">$148.98</span>
+        </div>
+      </div>
+      <main>
+        <section class="form-contact">
+          <h2>Contact information</h2>
+          <div class="inputs">
+            <img src="./assets/email.svg" alt="" />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email..."
+              name="email"
+              id="email"
+              class="section_input"
+            />
+          </div>
+
+          <div class="inputs">
+            <img src="./assets/phone.svg" alt="" />
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              placeholder="Enter your phone..."
+              name="phone"
+              id="phone"
+              class="section_input"
+            />
+          </div>
+        </section>
+        <section class="form-shipping">
+          <h2>Shipping address</h2>
+          <div class="inputs">
+            <img src="./assets/user.svg" alt="" />
+            <label for="name">Full name</label>
+            <input
+              class="section_input"
+              type="text"
+              placeholder="Your Full Name"
+              name="name"
+              id="name"
+            />
+          </div>
+          <div class="inputs">
+            <img src="./assets/address.svg" alt="" />
+            <label for="address">Address</label>
+            <input
+              type="text"
+              placeholder="Your address..."
+              name="address"
+              id="address"
+              class="section_input"
+            />
+          </div>
+          <div class="inputs">
+            <img src="./assets/city.svg" alt="" />
+            <label for="city">City</label>
+            <input
+              type="text"
+              placeholder="Your city..."
+              name="city"
+              id="city"
+              class="section_input"
+            />
+          </div>
+          <div class="city-info">
+            <div class="inputs">
+              <img src="./assets/country.svg" alt="" />
+              <label for="country">Country</label>
+              <select name="country" id="country" class="country section_input" type="text">
+                <option value="">Your country...</option>
+                <option value="1">Brasil</option>
+                <option value="2">Estados Unidos</option>
+                <option value="3">Paraguai</option>
+              </select>
+            </div>
+            <div class="inputs">
+              <img src="./assets/postal.svg" alt="" />
+              <label for="postal">Postal code</label>
+              <input
+                type="text"
+                placeholder="Your postal code..."
+                name="postal"
+                id="postal"
+                class="section_input"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="confirm">
+          <div>
+            <input type="checkbox" name="save" id="save" />
+            <label for="save">Save this information for next time</label>
+          </div>
+          <button onclick="Submit()">Continue</button>
+        </section>
+      </main>
+      <footer>
+        <p>created by <a href="">João Alberis</a> - devchallenges.io</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
