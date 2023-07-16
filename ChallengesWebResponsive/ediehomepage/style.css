@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins',sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #F2F2F2;
+
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+/* HEADER AND NAVEGATION */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+header h1{
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: 'Heebo', sans-serif;
+}
+
+.nav {
+  display: none;
+}
+
+.nav.open {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  background: #FFF;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transform: translateY(0);
+  
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hamburguer {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburguer span{
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  display: block;
+  margin-bottom: 5px;
+  transition: all .2s ease-out;
+}
+
+.hamburguer.open {
+  z-index: 99;
+}
+
+.hamburguer.open span:nth-child(1){
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.hamburguer.open span:nth-child(2){
+  transform: rotate(-45deg);
+}
+
+.hamburguer.open span:nth-child(3){
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+/* MAIN */
+
+.section-home {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.section-home span {
+  color: #2D9CDB;
+  font-weight: 500;
+  font-size: .75rem;
+  margin-left: 20px;
+}
+
+.section-home h2 {
+  color:#333;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.section-home img {
+  border-radius: 18px;
+  background-size: cover;
+}
+
+.section-home h3 {
+  margin-left: 20px;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 227px;
+}
+
+.section-home p {
+  color: #4F4F4F;
+  margin-inline: 20px;
+  font-weight: 400;
+  font-size: .75rem;
+  width: 275px;
+}
+
+.contact span{
+  color: #828282;
+  font-weight: 500;
+  font-size: .625rem;
+}
+
+.contact .contact-input {
+  margin-inline: 20px;
+  position: relative;
+}
+
+.contact .contact-input input {
+  border-radius: 12px;
+  background: #f2f2f2;
+  padding: 10px 15px;
+  border: 0;
+  width: 100%;
+}
+
+.contact .contact-input button {
+  border-radius: 12px;
+  background: #2D9CDB;
+  padding: 10px 15px;
+  border: 0;
+  color: white;
+  position: absolute;
+  right: 10px;
+}
+
+.section-services {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 100px;
+  margin-inline: 20px;
+}
+
+.section-services h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service img{
+  height: 64px;
+  width: 64px;
+  background: #2D9CDB;
+  padding: 15px;
+  border-radius: 16px;
+}
+
+.service h3{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.service p {
+  color: #4F4F4F;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.service a {
+  color: #828282;
+  font-weight: 500;
+  font-size: 1rem;
+  background: #E0E0E0;
+  border-radius: 12px;
+  padding: 10px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.section-works {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.section-works h2 {
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.work span {
+  color: #828282;
+  font-weight: 300;
+  font-size: .75rem;
+}
+
+.work p {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.see-more {
+  display: flex;
+  align-items: center;
+}
+
+.see-more a{
+  color: #2D9CDB;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.section-clients{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.section-clients span{
+  color: #EB5757;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.section-clients h2 {
+  color: #333;
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+.section-clients p {
+  color: #4F4F4F;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, minmax(100px, 300px));
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.person1 {
+  background-image: url('./assets/person3.png');
+  background-size: cover;
+  border-radius: 24px;
+  grid-row: 1 / span 2;
+  align-self: center;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.person2 {
+  background-image: url('./assets/person2.png');
+  background-size: cover;
+  border-radius: 24px;
+  grid-row: 2;
+}
+
+.person3 {
+  background-image: url('./assets/person1.png');
+  background-size: cover;
+  border-radius: 24px;
+  grid-row: 1;
+}
+
+.feed p{
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.feed-person {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: repeat(2, 30px);
+  gap: 20px;
+}
+
+.feed-person span {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #828282;
+}
+
+.feed-person p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.person4 {
+  background-image: url('./assets/person4.png');
+  background-size: cover;
+  border-radius: 12px;
+  grid-row: 1/span 2;
+}
+
+footer {
+  background: #100E1D;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer ul li {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.social-medias h4{
+  color: #F2F2F2;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+
+footer .contact .contact-input{
+  margin: 0;
+}
+
+footer p {
+  color: #F2F2F2;
+  text-align: center;
+  font-weight: 500;
+  font-size: .85rem;
+}

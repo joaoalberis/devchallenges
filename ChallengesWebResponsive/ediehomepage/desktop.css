@@ -1,0 +1,124 @@
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  header h1 {
+    font-size: 2.25rem;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .bar {
+    flex-direction: row;
+    gap: 20px;
+    position: inherit;
+  }
+
+  .bar li {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  .section-home span {
+    font-size: 1.125rem;
+  }
+
+  .section-home h2 {
+    font-size: 3rem;
+    width: 543px;
+  }
+
+  .section-home h3 {
+    font-size: 3rem;
+    width: 366px;
+  }
+
+  .section-home p {
+    font-size: 1.125rem;
+    width: 366px;
+  }
+
+  .contact {
+    width: 350px;
+  }
+
+  .contact span {
+    font-size: 0.85rem;
+  }
+
+  .section-services h2 {
+    font-size: 2.25rem;
+    width: 346px;
+  }
+
+  .services {
+    flex-direction: row;
+  }
+
+  .section-works h2 {
+    text-align: left;
+    width: 448px;
+    font-size: 2.25rem;
+    margin-bottom: 50px;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 100px;
+  }
+
+  .works .work:nth-child(even) {
+    align-self: flex-end;
+  }
+
+  .work {
+    height: calc(100% + 100px);
+  }
+
+  .work span {
+    font-size: 0.85rem;
+  }
+
+  .work p {
+    font-size: 1.5rem;
+  }
+
+  .see-more {
+    align-self: flex-end;
+  }
+
+  .see-more a {
+    font-size: 1.5rem;
+  }
+
+  .team-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 100px;
+  }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+  }
+
+  .feed > p {
+    font-size: 2.25rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
