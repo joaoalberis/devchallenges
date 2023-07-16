@@ -71,6 +71,10 @@ header h1{
   text-align: center;
 }
 
+.bar li a{
+  color: #333;
+}
+
 .hamburguer {
   border: 0;
   background-color: transparent;
@@ -90,6 +94,8 @@ header h1{
 
 .hamburguer.open {
   z-index: 99;
+  position: fixed;
+  right: 10px;
 }
 
 .hamburguer.open span:nth-child(1){
