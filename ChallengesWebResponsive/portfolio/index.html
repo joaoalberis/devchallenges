@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -7,89 +7,171 @@
       content="width=device-width, initial-scale=1,
   maximum-scale=5"
     />
-
     <link rel="icon" href="devchallenges.png" />
-
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="https://devchallenges.io/"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./desktop.css">
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+    <div class="container">
+      <aside>
+        <section class="card-profile">
+          <img src="./assets/profile.png" alt="" />
+          <div class="profile-info">
+            <p>João Alberis</p>
+            <span>Front-end developer</span>
+          </div>
+          <div class="profile-contact">
+            <img src="./assets/email.svg" alt="" />
+            <span>teste@teste.com</span>
+          </div>
+          <div class="profile-contact">
+            <img src="./assets/phone.svg" alt="" />
+            <span>(+603) 546 624 342</span>
+          </div>
+          <p>
+            Self-motivated developer, who is willing to learn and create
+            outstanding UI applications.
+          </p>
+        </section>
+        <section class="experiences">
+          <h2>Experiences</h2>
+          <article class="experience">
+            <img src="./assets/adidas.svg" alt="" />
+            <div class="info-experience">
+              <span>Feb 2017 - Current</span>
+              <p>Front-end developer</p>
+            </div>
+            <p>
+              Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
+              feugiat malesuada molestie.
+            </p>
+          </article>
+          <article class="experience">
+            <img src="./assets/apple.svg" alt="" />
+            <div class="info-experience">
+              <span>Aug 2016 - Feb 2018</span>
+              <p>Full-stack developer</p>
+            </div>
+            <p>
+              Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
+              feugiat malesuada molestie.
+            </p>
+          </article>
+          <article class="experience">
+            <img src="./assets/google.svg" alt="" />
+            <div class="info-experience">
+              <span>Jun 2015 - Aug 2016</span>
+              <p>Junior front-end developer</p>
+            </div>
+            <p>
+              Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
+              feugiat malesuada molestie.
+            </p>
+          </article>
+        </section>
+        <section class="hobbies">
+          <article class="hobbie">
+            <img src="./assets/play.png" alt="" />
+            <p>Gaming</p>
+            <span>Quisque feugiat malesuada molestie.</span>
+          </article>
+          <article class="hobbie">
+            <img src="./assets/cooking.png" alt="" />
+            <p>Cooking</p>
+            <span>Quisque feugiat malesuada molestie.</span>
+          </article>
+          <article class="hobbie">
+            <img src="./assets/biking.png" alt="" />
+            <p>Biking</p>
+            <span>Quisque feugiat malesuada molestie.</span>
+          </article>
+        </section>
+      </aside>
+      <main>
+        <section class="skills">
+          <h2>Front End</h2>
+          <p>Html</p>
+          <span></span>
+          <p>CSS</p>
+          <span></span>
+          <p>JavaScript</p>
+          <span></span>
+          <p>React</p>
+          <span></span>
+          <p>TypeScript</p>
+          <span></span>
+        </section>
+        <section class="projects">
+          <div class="projects-menu">
+            <h3>Projects (5)</h3>
+            <div class="menu">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive</span>
+              <span>React</span>
+            </div>
+          </div>
+          <article class="project">
+            <img src='./assets/404notfound.png' alt='image'/>
+            <span>#HTML #CSS #responsive</span>
+            <h3>Recipe Blog</h3>
+            <p>
+              In this project, I work with HTML and CSS to create a responsive
+              page . The design is from devchallenge.io. Donec aliquam est dui,
+              vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+              molestie.
+            </p>
+            <div class="project-view">
+              <a target="_blank" href="https://joaoalberis.github.io/devchallenges/ChallengesWebResponsive/404NotFound">Demo</a>
+              <a target="_blank">Code</a>
+            </div>
+          </article>
+          <article class="project">
+            <img src='./assets/mygallery.png' border='0' alt='image'/>
+            <span>#HTML #CSS #responsive</span>
+            <h3>My Gallery</h3>
+            <p>
+              In this project, I work with HTML and CSS to create a responsive
+              page . The design is from devchallenge.io. Donec aliquam est dui,
+              vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+              molestie.
+            </p>
+            <div class="project-view">
+              <a target="_blank" href="https://joaoalberis.github.io/devchallenges/ChallengesWebResponsive/mygallery/">Demo</a>
+              <a target="_blank">Code</a>
+            </div>
+          </article>
+          <article class="project">
+            <img src="./assets/checkout.png" alt="" />
+  
+            <span>#HTML #CSS #responsive</span>
+            <h3>Checkout</h3>
+            <p>
+              In this project, I work with HTML and CSS to create a responsive
+              page . The design is from devchallenge.io. Donec aliquam est dui,
+              vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+              molestie.
+            </p>
+            <div class="project-view">
+              <a target="_blank" href="https://joaoalberis.github.io/devchallenges/ChallengesWebResponsive/checkoutpage/">Demo</a>
+              <a target="_blank">Code</a>
+            </div>
+          </article>
+        </section>
+      </main>
     </div>
+    <footer>
+      <p>created by <a href="https://github.com/joaoalberis">João Alberis</a> - devChallenges.io</p>
+    </footer>
   </body>
 </html>
