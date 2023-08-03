@@ -32,7 +32,9 @@ Primeiro clone o repositorio em sua maquina, apos isso va até o diretorio do se
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/joaoalberis/devchallenges/ChallengesFrontEnd/buttoncomponent.git
+$ git clone https://github.com/joaoalberis/devchallenges.git
+
+$ cd ./devchallenges/ChallengesFrontEnd/buttoncomponent
 
 # Install dependencies
 $ npm install
@@ -43,5 +45,5 @@ $ npm start
 
 ## Contact
 
-- Site [Button Component](https://joaoalberis.github.io/devchallenges/ChallengesFrontEnd/buttoncomponent)
+- Site [Button Component](https://buttonchallenges.vercel.app/)
 - GitHub [@joaoalberis](https://{github.com/joaoalberis})
