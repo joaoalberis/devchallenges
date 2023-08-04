@@ -15,7 +15,7 @@
 
 ## Overview
 
-![Desktop](./src/print.png)
+![Desktop](./src/assets/captura.png)
 
 Esse projeto foi proposto pela devChallenges, o desafio consiste em criar um componente de input, com diferentes estilos atendendo a todos os requisitos passados pelo projeto do figma.
 
@@ -45,5 +45,5 @@ $ npm start
 
 ## Contact
 
-- Site [Button Component](https://inputcomponent.vercel.app/)
+- Site [Input Component](https://inputcomponent-two.vercel.app/)
 - GitHub [@joaoalberis](https://{github.com/joaoalberis})
