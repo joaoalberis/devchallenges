@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    color: #4f4f4f;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 90px;
+    max-width: max-content;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    padding-block: 20px;
+}

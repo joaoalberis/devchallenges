@@ -1,0 +1,91 @@
+input {
+    border-radius: 8px;
+    border: 1px solid #828282;
+    color: #333;
+    font-size: .85rem;
+    font-weight: 500;
+    width: 200px;
+    height: 56px;
+    padding-left: 10px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid #828282;
+    padding: 15px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+input:hover {
+    border: 1px solid #333;
+}
+
+input:focus {
+    border: 1px solid #2962FF;
+    outline: none;
+}
+
+.error {
+    border: 1px solid #D32F2F;
+}
+
+input.error:focus {
+    border: 1px solid #D32F2F;
+}
+
+.inputDetails input.error + .helpText {
+    color: #D32F2F;
+}
+
+input:disabled, textarea:disabled {
+    border: 1px solid #E0E0E0;
+    background: #F2F2F2;
+}
+
+.sm {
+    height: 40px;
+}
+
+.md {
+    height: 56px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.inputDetails {
+    position: relative;
+    min-width: max-content;
+}
+
+.inputDetails .startIcon ~ input::placeholder, .inputDetails .startIcon ~ textarea::placeholder{
+    padding-left: 25px;
+}
+
+.startIcon, .endIcon {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 35%;
+}
+
+.startIcon {
+    left: 10px;
+}
+
+.endIcon {
+    right: 10px;
+}
