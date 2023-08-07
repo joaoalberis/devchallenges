@@ -47,5 +47,5 @@ $ npm start
 
 ## Contact
 
-- Site [Todo App](https://todoapp-joaoalberis.vercel.app/)
+- Site [Todo App](https://todoapp-airo.onrender.com)
 - GitHub [@joaoalberis](https://{github.com/joaoalberis})

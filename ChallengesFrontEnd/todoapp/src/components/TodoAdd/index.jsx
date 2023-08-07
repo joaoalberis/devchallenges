@@ -19,8 +19,7 @@ export function TodoAdd({updateTasks}) {
         newTask.value = '';
         updateTasks()
     }
-
-
+    
     return (
         <div className="flex gap-3 my-5">
             <input className="w-full rounded-xl border border-[#bdbdbd] p-3 placeholder:text-[#828282] placeholder:text-sm font-normal" type="text" placeholder='add details' name="" id="newTask" />

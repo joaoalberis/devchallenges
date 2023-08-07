@@ -9,6 +9,7 @@ function App() {
   const [active, setActive] = useState('All')
 
   function updateTasks() {
+    if (localStorage.getItem('tasks') === null) localStorage.setItem('tasks', '[]')
     const tasks = JSON.parse(localStorage.getItem('tasks'));
     if (active === 'All'){
         setTasks(tasks)
