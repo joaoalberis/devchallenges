@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 50px;
+}
+
+a {
+  text-decoration: underline;
+  color: #828282;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  color: #828282;
+  font-weight: 500;
+  font-size: .85rem;
+}
