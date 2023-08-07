@@ -28,16 +28,15 @@ export function Guests({handleGuests, menuGuests, menuLocation, guests, setGuest
 
     return (
         <>
-        <div className={`${!menuGuests && 'border-[#f2f2f2] border-r-2 px-4'}`}>
+        <div className={`${!menuGuests && 'border-[#f2f2f2] border-r-2 px-4 max-sm:border-0'}`}>
             <div className={`${menuGuests && 'border-2 border-[#333] rounded-2xl px-4 py-2 text-left'} cursor-pointer`} onClick={handleGuests}>
                 {menuGuests || menuLocation ? <p className="uppercase text-[#333] text-[9px] font-extrabold">GUESTS</p> : ''}
                 {guests === 0 ? <p className="text-[#BDBDBD] border-0 outline-0">Add guests</p> : <p className="text-[#333] text-sm font-normal">{guests} guests</p>}
-                
             </div>
         </div>
         {
             menuGuests &&
-                <div className='flex flex-col gap-10 order-4 col-start-2 justify-self-start py-8'>
+                <div className='flex flex-col gap-10 order-4 col-start-2 justify-self-start py-8 max-sm:row-start-3 max-sm:col-start-1'>
                     <div>
                         <p className="text-[#333] text-sm font-bold">Adults</p>
                         <span className="text-gray-400 text-sm font-normal">Ages 13 or above</span>
