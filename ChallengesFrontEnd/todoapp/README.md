@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Wind BNB</h1>
+<h1 align="center">Todo App</h1>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -15,14 +15,11 @@
 
 ## Overview
 
-![Desktop](./src/assets/screenshots/desktop.png)
-![DesktopMenu](./src/assets/screenshots/desktopMenu.png)
-![DesktopMenu2](./src/assets/screenshots/desktopMenu2.png)
-![Mobile](./src/assets/screenshots/mobile.png)
-![MobileMenu](./src/assets/screenshots/mobileMenu.png)
-![MobileMenu2](./src/assets/screenshots/mobileMenu2.png)
+![todoAll](./src/assets/screenshots/todoAll.png)
+![todoActive](./src/assets/screenshots/todoActive.png)
+![todoCompleted](./src/assets/screenshots/todoCompleted.png)
 
-Esse projeto foi proposto pela devChallenges, o desafio consiste em criar uma pagina de estadias, onde é consumido um arquivo .json para mostrar as estadias disponiveis de acordo com o filtro selecionado pelo usuario..
+Esse projeto foi proposto pela devChallenges, o desafio consiste em criar uma pagina de um todo list, onde o usuario pode adicionar, marcar como concluida e visualizar todas as tarefas, as em andamento e as concluidas. Alem disso é possivel deletar tasks.
 
 ### Built With
 
@@ -50,5 +47,5 @@ $ npm start
 
 ## Contact
 
-- Site [Wind bnb](https://windbnb-joaoalberis.vercel.app/)
+- Site [Todo App](https://todoapp-joaoalberis.vercel.app/)
 - GitHub [@joaoalberis](https://{github.com/joaoalberis})
