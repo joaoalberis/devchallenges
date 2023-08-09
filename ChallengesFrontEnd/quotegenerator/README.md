@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Todo App</h1>
+<h1 align="center">Generator Quote</h1>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -15,15 +15,16 @@
 
 ## Overview
 
-![todoAll](./src/assets/screenshots/todoAll.png)
-![todoActive](./src/assets/screenshots/todoActive.png)
-![todoCompleted](./src/assets/screenshots/todoCompleted.png)
+![quote](./src/assets/screenshots/quote.png)
+"![quoteHover](./src/assets/screenshots/quoteHover.png)
+![quoteInfos](./src/assets/screenshots/quoteInfos.png)
 
-Esse projeto foi proposto pela devChallenges, o desafio consiste em criar uma pagina de um todo list, onde o usuario pode adicionar, marcar como concluida e visualizar todas as tarefas, as em andamento e as concluidas. Alem disso é possivel deletar tasks.
+Esse projeto foi proposto pela devChallenges, o desafio consiste em criar uma pagina de geração de quotes, onde o usuario pode gerar um novo quote ou entao abrir informações adicionais sobre o autor, local que é possivel visualizar todas as quotes desse autor.
 
 ### Built With
 
 - [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/en/main)
 - [TailwindCSS](https://tailwindcss.com/)
 
 ## How To Use
@@ -36,7 +37,7 @@ Primeiro clone o repositorio em sua maquina, apos isso va até o diretorio do se
 # Clone this repository
 $ git clone https://github.com/joaoalberis/devchallenges.git
 
-$ cd ./devchallenges/ChallengesFrontEnd/todoapp
+$ cd ./devchallenges/ChallengesFrontEnd/quotegenerator
 
 # Install dependencies
 $ npm install
@@ -47,5 +48,5 @@ $ npm start
 
 ## Contact
 
-- Site [Todo App](https://todoapp-airo.onrender.com)
-- GitHub [@joaoalberis](https://{github.com/joaoalberis})
+- Site [Quote Generator](https://quotegenerator-airo.onrender.com)
+- GitHub [@joaoalberis](https://github.com/joaoalberis)

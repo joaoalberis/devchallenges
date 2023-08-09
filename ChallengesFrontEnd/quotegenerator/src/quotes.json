@@ -1,0 +1,302 @@
+[
+  {
+    "quote": "The journey of a thousand miles begins with one step.",
+    "author": "Lao Tzu",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Lao Tzu",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "Be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "You must be the change you want to see in the world.",
+    "author": "Mahatma Gandhi",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "In three words I can sum up everything I’ve learned about life: it goes on.",
+    "author": "Robert Frost",
+    "genre": "life"
+  },
+  {
+    "quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
+    "author": "Robert Frost",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author": "Ralph Waldo Emerson",
+    "genre": "self-improvement"
+  },
+  {
+    "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "author": "Ralph Waldo Emerson",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "genre": "success"
+  },
+  {
+    "quote": "If you're going through hell, keep going.",
+    "author": "Winston Churchill",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "Believe you can and you’re halfway there.",
+    "author": "Theodore Roosevelt",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar",
+    "genre": "self-improvement"
+  },
+  {
+    "quote": "You don't have to be great to start, but you have to start to be great.",
+    "author": "Zig Ziglar",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.",
+    "author": "Jimmy Dean",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "The road to success is dotted with many tempting parking spaces.",
+    "author": "Jimmy Dean",
+    "genre": "humor"
+  },
+  {
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "The greatest discovery of my generation is that a human being can alter his life by altering his attitudes.",
+    "author": "William James",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "The only thing we have to fear is fear itself.",
+    "author": "Franklin D. Roosevelt",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "No one can make you feel inferior without your consent.",
+    "author": "Eleanor Roosevelt",
+    "genre": "self-improvement"
+  },
+  {
+    "quote": "The only thing necessary for the triumph of evil is for good men to do nothing.",
+    "author": "Edmund Burke",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "All that is necessary for the triumph of evil is that good men do nothing.",
+    "author": "Edmund Burke",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    "author": "Winston Churchill",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.",
+    "author": "Winston Churchill",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "You'll always miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "genre": "sports"
+  },
+  {
+    "quote": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "Whether you think you can, or you think you can't – you're right.",
+    "author": "Henry Ford",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
+    "author": "Steve Jobs",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "Be the change that you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "You must be the change you want to see in the world.",
+    "author": "Mahatma Gandhi",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "In three words I can sum up everything I’ve learned about life: it goes on.",
+    "author": "Robert Frost",
+    "genre": "life"
+  },
+  {
+    "quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
+    "author": "Robert Frost",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author": "Ralph Waldo Emerson",
+    "genre": "self-improvement"
+  },
+  {
+    "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "author": "Ralph Waldo Emerson",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "genre": "success"
+  },
+  {
+    "quote": "If you're going through hell, keep going.",
+    "author": "Winston Churchill",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "Believe you can and you’re halfway there.",
+    "author": "Theodore Roosevelt",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar",
+    "genre": "self-improvement"
+  },
+  {
+    "quote": "You don't have to be great to start, but you have to start to be great.",
+    "author": "Zig Ziglar",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.",
+    "author": "Jimmy Dean",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "The road to success is dotted with many tempting parking spaces.",
+    "author": "Jimmy Dean",
+    "genre": "humor"
+  },
+  {
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "The greatest discovery of my generation is that a human being can alter his life by altering his attitudes.",
+    "author": "William James",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "The only thing we have to fear is fear itself.",
+    "author": "Franklin D. Roosevelt",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "No one can make you feel inferior without your consent.",
+    "author": "Eleanor Roosevelt",
+    "genre": "self-improvement"
+  },
+  {
+    "quote": "The only thing necessary for the triumph of evil is for good men to do nothing.",
+    "author": "Edmund Burke",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "All that is necessary for the triumph of evil is that good men do nothing.",
+    "author": "Edmund Burke",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    "author": "Winston Churchill",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.",
+    "author": "Winston Churchill",
+    "genre": "wisdom"
+  },
+  {
+    "quote": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "You'll always miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "genre": "sports"
+  },
+  {
+    "quote": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "genre": "inspiration"
+  },
+  {
+    "quote": "Whether you think you can, or you think you can't – you're right.",
+    "author": "Henry Ford",
+    "genre": "wisdom"
+  }
+]
