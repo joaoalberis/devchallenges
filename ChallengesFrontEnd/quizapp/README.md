@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Generator Quote</h1>
+<h1 align="center">Quiz App</h1>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -15,16 +15,16 @@
 
 ## Overview
 
-![quote](./src/assets/screenshots/quote.png)
-![quoteHover](./src/assets/screenshots/quoteHover.png)
-![quoteInfos](./src/assets/screenshots/quoteInfos.png)
+![quizMenu](./src/assets/screenshots/quizMenu.png)
+![quiz](./src/assets/screenshots/quiz.png)
+![quizFailed](./src/assets/screenshots/quizFailed.png)
+![quizResults](./src/assets/screenshots/quizResults.png)
 
-Esse projeto foi proposto pela devChallenges, o desafio consiste em criar uma pagina de geração de quotes, onde o usuario pode gerar um novo quote ou entao abrir informações adicionais sobre o autor, local que é possivel visualizar todas as quotes desse autor.
+Esse projeto foi proposto pela devChallenges, o desafio consiste em criar um quiz, alem das funcionalidades pedidas, que foram: ir para proxima pergunta ao acertar, ao errar mostrar a resposta correta e finalizar o quiz e poder tentar novamente, tambem adicionei outras funcionalidades como configuração do quiz, onde é possivel informar quantas perguntas devem ter(max de 25) e selecionar a dificuldade(facil, medio e dificil)
 
 ### Built With
 
 - [React](https://reactjs.org/)
-- [React Router](https://reactrouter.com/en/main)
 - [TailwindCSS](https://tailwindcss.com/)
 
 ## How To Use
@@ -37,7 +37,7 @@ Primeiro clone o repositorio em sua maquina, apos isso va até o diretorio do se
 # Clone this repository
 $ git clone https://github.com/joaoalberis/devchallenges.git
 
-$ cd ./devchallenges/ChallengesFrontEnd/quotegenerator
+$ cd ./devchallenges/ChallengesFrontEnd/quizapp
 
 # Install dependencies
 $ npm install
@@ -48,5 +48,5 @@ $ npm start
 
 ## Contact
 
-- Site [Quote Generator](https://quotegenerator-ebh7.onrender.com)
+- Site [Quiz App](https://quizapp-ebh7.onrender.com)
 - GitHub [@joaoalberis](https://github.com/joaoalberis)
