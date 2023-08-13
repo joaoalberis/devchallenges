@@ -1,40 +1,53 @@
-import { useState } from 'react';
-import './App.css';
+import { useEffect, useState } from 'react';
 import { TodayInfo } from './components/TodayInfo';
 import { WeatherInfo } from './components/WeatherInfo';
-import axios from 'axios'
+import { useGlobalState } from './GloabalStateProvider';
+import {api} from './lib/api'
+import { Modal } from './components/Modal';
 
 function App() {
 
-  const [location, setLocation] = useState()
+  const [location, setLocation] = useState('');
+  const { setWeatherInfo, setWeather5DaysInfo, tempType} = useGlobalState();
+  const [modal, setModal] = useState({})
 
-  async function weather(lat, lon){
-    /* const options = {
-      method: 'GET',
-      url: `https://api.openweathermap.org/data/2.5/weather`,
-      params: {
-        lat,
-        lon,
-        appid: process.env.REACT_APP_WEATHER_KEY,
-        lang: "pt_br"
-      },
-    }; */
-    const option2 = {
-      method: 'GET',
-      url: ``
+  async function weather(location, tempType) {
+    const appid = process.env.REACT_APP_WEATHER_KEY
+    const units = `${tempType === '°F' ? 'imperial' : 'metric'}`
+    if (location !== ''){
+      try {
+        const response = await api.get(`/weather?q=${location}&appid=${appid}&units=${units}`)
+        const response2 = await api.get(`/forecast?q=${location}&appid=${appid}&units=${units}`)
+        setWeatherInfo(response.data)
+        setWeather5DaysInfo(response2.data)
+      }catch(err){
+        if (err.response.status === 404){
+          setWeatherInfo(undefined)
+          setWeather5DaysInfo(undefined)
+          setModal({ message: err.response.data.message, type: 'error'})
+        }
+      }
+    }else if(location === '') {
+      navigator.geolocation.getCurrentPosition(async function(position) {
+        const latitude = position.coords.latitude
+        const longitude = position.coords.longitude
+        const response = await api.get(`/weather?lat=${latitude}&lon=${longitude}&appid=${appid}&units=${units}`)
+        const response2 = await api.get(`/forecast?lat=${latitude}&lon=${longitude}&appid=${appid}&units=${units}`)
+        setWeatherInfo(response.data)
+        setWeather5DaysInfo(response2.data)
+      })
     }
-    const response = await axios.request(options)
-    console.log(response.data)
   }
 
-  navigator.geolocation.getCurrentPosition(function(position) {
-    weather(position.coords.latitude, position.coords.longitude)
-  })
-
+  useEffect(() => {
+    weather(location, tempType)
+  },[location, tempType])
+  
   return (
     <div className="flex h-screen overflow-hidden">
-      <TodayInfo location={location} setLocation={setLocation} />
-      <WeatherInfo location={location} setLocation={setLocation} />
+      <Modal message={modal.message} type={modal.type} onExit={() => setModal({})}/>
+      <TodayInfo weather={weather} setLocation={setLocation} />
+      <WeatherInfo />
     </div>
   );
 }
