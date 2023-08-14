@@ -1,5 +1,5 @@
-export function getDate(){
-    const date = new Date();
+export function getDate(dateISO){
+    const date = new Date(dateISO);
     const dayNumber = date.getDate()
     const day = date.getDay()
     const month = date.getMonth();

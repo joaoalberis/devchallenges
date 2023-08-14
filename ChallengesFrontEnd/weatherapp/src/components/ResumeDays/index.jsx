@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useGlobalState } from "../../GloabalStateProvider"
+import { getDate } from "../../lib/getDate"
 
 export function ResumeDays(){
 
@@ -38,7 +39,7 @@ export function ResumeDays(){
             {weather5DaysInfoDetails.length > 0 ? weather5DaysInfoDetails.map((weatherInfo, index) => {
                 return (
                     <div key={index} className="flex flex-col gap-3 bg-[#1E213A] p-5 text-[#e7e7eb] text-base font-medium">
-                        <h3 className="text-center">{weatherInfo.dt_txt.split(` `)[0]}</h3>
+                        <h3 className="text-center">{`${getDate(weatherInfo.dt_txt).dayWeek}, ${getDate(weatherInfo.dt_txt).dayNumber} ${getDate(weatherInfo.dt_txt).monthString}`}</h3>
                         <img className="w-28" src={`https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png`} alt="" />
                         <span className="flex justify-between">
                             <p>{(weatherInfo.main.temp_max).toFixed(1)}{tempType}</p>
