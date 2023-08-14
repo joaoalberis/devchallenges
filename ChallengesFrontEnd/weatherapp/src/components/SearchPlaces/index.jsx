@@ -4,8 +4,9 @@ import axios from 'axios'
 
 export function SearchPlaces({setSearchGui, setLocation}) {
 
-    const [searchResults, setSearchResults] = useState([])
+    const [searchResults, setSearchResults] = useState([]) // State that saves city search API results
 
+    // Function responsible for calling the search API
     async function search(e){
         const options = {
         method: 'GET',
@@ -23,7 +24,6 @@ export function SearchPlaces({setSearchGui, setLocation}) {
             console.error(error);
         }
       }
-
 
     return (
         <>

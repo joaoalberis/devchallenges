@@ -7,11 +7,12 @@ import {getDate} from '../../lib/getDate'
 
 export function TodayInfo({setLocation}){
 
-    const [searchGui, setSearchGui] = useState(false)
-    const { weatherInfo, tempType } = useGlobalState()
-    const { dayWeek, dayNumber, monthString} = getDate()
+    const [searchGui, setSearchGui] = useState(false) // State that controls the search GUI
+    const { weatherInfo, tempType } = useGlobalState() // states that keep the weather of the current day and the type of temperature
+    const { dayWeek, dayNumber, monthString} = getDate() // function that gets the day of the month, day of the week, and the month
+    
     return (
-        <aside className={`${!searchGui && "bg-[url('./assets/background.png')]"} relative flex items-center flex-col gap-10 p-12  bg-[#1E213A] overflow-hidden bg-contain bg-no-repeat w-1/3 min-w-max`}>
+        <aside className={`${!searchGui ? "bg-[url('./assets/background.png')]" : 'max-sm:min-h-screen'} relative flex items-center flex-col gap-10 p-12  bg-[#1E213A] overflow-hidden bg-contain bg-no-repeat w-1/3 min-w-max max-sm:overflow-visible max-sm:w-full h-full`}>
             {!searchGui ? 
                 <>
                     <div className='flex self-stretch justify-between'>

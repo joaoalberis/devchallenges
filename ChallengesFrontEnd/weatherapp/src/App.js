@@ -7,10 +7,11 @@ import { Modal } from './components/Modal';
 
 function App() {
 
-  const [location, setLocation] = useState('');
-  const { setWeatherInfo, setWeather5DaysInfo, tempType} = useGlobalState();
-  const [modal, setModal] = useState({})
+  const [location, setLocation] = useState(''); // location current
+  const { setWeatherInfo, setWeather5DaysInfo, tempType} = useGlobalState(); // state of weather today, weather 5 days and temperature type(°c and °f)
+  const [modal, setModal] = useState({}) // using to controller modal
 
+  // function request api
   async function weather(location, tempType) {
     const appid = process.env.REACT_APP_WEATHER_KEY
     const units = `${tempType === '°F' ? 'imperial' : 'metric'}`
@@ -44,7 +45,7 @@ function App() {
   },[location, tempType])
   
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-screen max-sm:flex-col">
       <Modal message={modal.message} type={modal.type} onExit={() => setModal({})}/>
       <TodayInfo weather={weather} setLocation={setLocation} />
       <WeatherInfo />

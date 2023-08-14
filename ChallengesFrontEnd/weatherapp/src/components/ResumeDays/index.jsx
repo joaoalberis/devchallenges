@@ -3,9 +3,10 @@ import { useGlobalState } from "../../GloabalStateProvider"
 
 export function ResumeDays(){
 
-    const { weather5DaysInfo, tempType } = useGlobalState()
-    const [ weather5DaysInfoDetails, setWeather5DaysInfoDetails] = useState([])
+    const { weather5DaysInfo, tempType } = useGlobalState() // state that stores the weather information of the next 5 days and the type of temperature
+    const [ weather5DaysInfoDetails, setWeather5DaysInfoDetails] = useState([]) // state that will be stored the next 5 days in an interval of 24h
 
+    // Responsible for filtering the API result for the 5 days in a 24h interval
     useEffect(() => {
         if(weather5DaysInfo !== undefined) {
             const date = new Date()
@@ -19,9 +20,10 @@ export function ResumeDays(){
                         if (hour >= 0 && hour < 2 && day <= 5){
                             console.log(weatherInfo.dt_txt)
                             day++
-                            return weatherInfo
+                            return true
                         }
                     }
+                    return false
                 })
             )
         }else {
@@ -32,12 +34,12 @@ export function ResumeDays(){
 
     
     return (
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-5 w-full justify-center">
             {weather5DaysInfoDetails.length > 0 ? weather5DaysInfoDetails.map((weatherInfo, index) => {
                 return (
-                    <div key={index} className="flex flex-col gap-5 bg-[#1E213A] p-5 text-[#e7e7eb] text-base font-medium">
+                    <div key={index} className="flex flex-col gap-3 bg-[#1E213A] p-5 text-[#e7e7eb] text-base font-medium">
                         <h3 className="text-center">{weatherInfo.dt_txt.split(` `)[0]}</h3>
-                        <img src={`https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@4x.png`} alt="" />
+                        <img className="w-28" src={`https://openweathermap.org/img/wn/${weatherInfo.weather[0].icon}@2x.png`} alt="" />
                         <span className="flex justify-between">
                             <p>{(weatherInfo.main.temp_max).toFixed(1)}{tempType}</p>
                             <p className="text-[#a09fb1]">{(weatherInfo.main.temp_min).toFixed(1)}{tempType}</p>

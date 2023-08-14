@@ -3,12 +3,12 @@ import navigation from '../../assets/navigation.svg';
 
 export function TodayHightlights() {
 
-    const { weatherInfo, prefixWindSpeed } = useGlobalState()
+    const { weatherInfo, prefixWindSpeed } = useGlobalState() // state that saves the current time and wind prefix information
 
     return (
         <div className="flex flex-col gap-5">
             <h2 className="text-[#e7e7eb] text-2xl font-bold">Today's Highlights</h2>
-            {weatherInfo !== undefined ? <div className="grid grid-cols-2 grid-rows-max-content-2 gap-12">
+            {weatherInfo !== undefined ? <div className="grid grid-cols-2 grid-rows-max-content-2 gap-12 max-lg:grid-cols-1">
                 <div className="bg-[#1E213A] flex flex-col items-center gap-7 py-7">
                     <p className="text-[#e7e7eb] text-base font-medium">Wind status</p>
                     <p className="text-[#e7e7eb] text-4xl font-medium"><span className="font-bold text-6xl">{weatherInfo.wind.speed}</span> mp{prefixWindSpeed}</p>
@@ -27,7 +27,7 @@ export function TodayHightlights() {
                 </div>
                 <div className="bg-[#1E213A] flex flex-col items-center gap-7 py-7">
                     <p className="text-[#e7e7eb] text-base font-medium">Visibility</p>
-                    <p className="text-[#e7e7eb] text-4xl font-medium"><span className="font-bold text-6xl">{(weatherInfo.visibility / 1609).toFixed(2)}</span> miles</p>
+                    <p className="text-[#e7e7eb] text-center text-4xl font-medium"><span className="font-bold text-6xl">{(weatherInfo.visibility / 1609).toFixed(2)}</span> miles</p>
                 </div>
                 <div className="bg-[#1E213A] flex flex-col items-center gap-7 py-7">
                     <p className="text-[#e7e7eb] text-base font-medium">Air Pressure</p>
