@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { InfoJobs } from './components/InfoJobs';
+import { Footer } from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
         <Route path='/:id' element={<InfoJobs />} />
       </Routes>
     </BrowserRouter>
+    <Footer />
   </React.StrictMode>
 );
 

@@ -12,8 +12,8 @@ export function InfoJobs() {
             {data.map(job => {
                 if(job.id === id) {
                     return (
-                        <div key={job.id} className="grid grid-cols-[300px,1fr] gap-y-6 gap-x-16">
-                            <h1 className="text-[#282538] text-2xl font-light col-span-2"><span className="font-bold">Github</span> Jobs</h1>
+                        <div key={job.id} className="grid grid-cols-[300px,1fr] gap-y-6 gap-x-16 max-lg:grid-cols-1">
+                            <h1 className="text-[#282538] text-2xl font-light col-span-2 max-lg:col-auto"><span className="font-bold">Github</span> Jobs</h1>
                             <aside className="flex flex-col gap-4">
                                 <a href="/" className="flex items-center cursor-pointer">
                                     <svg className="h-10 w-10 fill-[#1E86FF]" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M561-240 320-481l241-241 43 43-198 198 198 198-43 43Z"/></svg>
@@ -23,7 +23,7 @@ export function InfoJobs() {
                                 <p className="text-[#334680] font-medium text-sm" dangerouslySetInnerHTML={{__html: job.how_to_apply}} />
                             </aside>
                             <main className="grid grid-rows-[50px, 50px, max-content] gap-y-8">
-                                <div className="grid grid-cols-[1fr,1fr] justify-self-start items-center gap-x-4 text-[#334680] font-bold">
+                                <div className="grid grid-cols-[1fr,1fr] justify-self-start items-center gap-x-4 text-[#334680] font-bold max-lg:grid-cols-1 max-lg:gap-y-4">
                                     <h2 className="text-2xl">{job.title}</h2>
                                     {job.type === 'Full Time' && <span className="rounded border border-[#334680] py-2 px-3 text-sm w-max">Full time</span>}
                                     <span className="text-[#b7bcce] font-medium text-xs">{getMonth(job.created_at)}, {getYear(job.created_at)}</span>
