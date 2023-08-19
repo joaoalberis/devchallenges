@@ -1,6 +1,6 @@
 import logo from '../../assets/boyesen.svg'
 import {getMonth, getYear} from '../../lib/Data'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Pagination } from '../Pagination'
 
 export function Jobs({ results }) {
@@ -8,6 +8,10 @@ export function Jobs({ results }) {
     const [page, setPage] = useState(0)
     const totalPerPage = 4
     const totalPages = Math.ceil(results.length / totalPerPage)
+
+    useEffect(() => {
+        setPage(0)
+    }, [results])
 
     return (
         <main className="flex flex-col gap-8">
