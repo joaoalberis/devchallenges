@@ -48,5 +48,5 @@ $ npm start
 
 ## Contact
 
-- Site [Quiz App](https://todoapp-airo.onrender.com)
+- Site [Quiz App](https://quizapp-7l3f.onrender.com)
 - GitHub [@joaoalberis](https://github.com/joaoalberis)
